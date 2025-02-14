@@ -119,4 +119,18 @@ Run the following command:
 
 ---
 
+## Verify 
 
+1. Verify k8s deployment
+![k8s-dep-final](../images/k8s-dep-final.png)
+
+---
+2. Open Sonar Status
+![soanr-final](../images/soanr-final.png)
+
+---
+3. Check the Pipeline Status
+![pipeline-status-final](../images/pipeline-status-final.png)
+
+
+---
