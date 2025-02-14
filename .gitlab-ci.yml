@@ -68,8 +68,8 @@ build_and_push_image:
   script:
     - docker login -u $DOCKERHUB_USER -p $DOCKERHUB_PASSWORD
     - mvn package
-    - docker build -t atkaridarshan04/boardgame-gitlab:v1 .  
-    - docker push atkaridarshan04/boardgame-gitlab:v1  
+    - docker build -t atkaridarshan04/boardgame-cicd:latest .  
+    - docker push atkaridarshan04/boardgame-cicd:latest
   tags:
     - self-hosted
   only:

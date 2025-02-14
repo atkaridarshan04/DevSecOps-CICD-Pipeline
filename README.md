@@ -82,15 +82,16 @@ https://github.com/atkaridarshan04/GitLab-CICD.git
 ### 4. Set Up Kubernetes Configuration
 1. Create a kind cluster 
    ```bash
-   kind create cluster --config kind-config
+   kind create cluster --config kind-config.yml
    ```
+   kind-config.yml
    ```yaml
    kind: Cluster
    apiVersion: kind.x-k8s.io/v1alpha4
    nodes:
    - role: control-plane
-      extraPortMappings:
-         - containerPort: 30080
+     extraPortMappings:
+       - containerPort: 30080  
          hostPort: 30080
          protocol: TCP
    ```
